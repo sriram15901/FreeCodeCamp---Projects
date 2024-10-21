@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    /* Navbar Styles */
+    #navbar {
+      width: 250px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      margin-top: 0;
+    }
+
+    .nav-link {
+      color: white;
+      text-decoration: none;
+      display: block;
+      margin: 10px 0;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Content Styles */
+    #main-doc {
+      margin-left: 270px;
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    .main-section {
+      margin-bottom: 40px;
+    }
+
+    code {
+      background-color: #f4f4f4;
+      padding: 5px;
+      border-radius: 4px;
+      display: block;
+      margin: 10px 0;
+    }
+
+    /* Media Query */
+    @media (max-width: 768px) {
+      #navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>
+      <h2>Documentation Topics</h2>
+    </header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#HTML_Basics" class="nav-link">HTML Basics</a>
+    <a href="#CSS_Fundamentals" class="nav-link">CSS Fundamentals</a>
+    <a href="#JavaScript_Syntax" class="nav-link">JavaScript Syntax</a>
+    <a href="#Conclusion" class="nav-link">Conclusion</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-doc">
+    <section id="Introduction" class="main-section">
+      <header>Introduction</header>
+      <p>This section introduces the technical documentation.</p>
+      <code>&lt;!DOCTYPE html&gt;</code>
+      <p>We will explore several key concepts in web development.</p>
+    </section>
+
+    <section id="HTML_Basics" class="main-section">
+      <header>HTML Basics</header>
+      <p>HTML is the foundation of all web pages.</p>
+      <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+      <p>HTML elements are represented by tags.</p>
+      <ul>
+        <li>Paragraphs: &lt;p&gt;</li>
+        <li>Headers: &lt;h1&gt; to &lt;h6&gt;</li>
+        <li>Links: &lt;a&gt;</li>
+      </ul>
+    </section>
+
+    <section id="CSS_Fundamentals" class="main-section">
+      <header>CSS Fundamentals</header>
+      <p>CSS is used to style HTML elements.</p>
+      <code>body { background-color: lightblue; }</code>
+      <p>CSS makes websites more visually appealing.</p>
+      <code>h1 { color: red; }</code>
+      <p>You can use classes and ids to apply specific styles.</p>
+    </section>
+
+    <section id="JavaScript_Syntax" class="main-section">
+      <header>JavaScript Syntax</header>
+      <p>JavaScript adds interactivity to web pages.</p>
+      <code>console.log('Hello, World!');</code>
+      <p>JavaScript syntax is based on ECMAScript.</p>
+      <ul>
+        <li>Variables: <code>var</code>, <code>let</code>, <code>const</code></li>
+        <li>Functions: <code>function myFunction() { }</code></li>
+        <li>Events: <code>onClick</code>, <code>onHover</code></li>
+      </ul>
+    </section>
+
+    <section id="Conclusion" class="main-section">
+      <header>Conclusion</header>
+      <p>This documentation covers the basics of web development.</p>
+      <p>HTML, CSS, and JavaScript form the core technologies of the web.</p>
+    </section>
+  </main>
+</body>
+</html>

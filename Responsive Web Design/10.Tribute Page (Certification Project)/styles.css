@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+#main {
+  text-align: center; /* Center-align text and elements in the main */
+}
+
+#img-div {
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  margin: 20px 0; /* Space above and below */
+}
+
+#image {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#img-caption {
+  margin-top: 10px; /* Space between image and caption */
+}
+
+#tribute-info {
+  margin: 20px 0; /* Space above and below tribute info */
+}
+
+#tribute-link {
+  display: inline-block; /* Make the link an inline block */
+  margin-top: 20px; /* Space above the link */
+  text-decoration: none; /* Remove underline from link */
+  color: blue; /* Link color */
+}
